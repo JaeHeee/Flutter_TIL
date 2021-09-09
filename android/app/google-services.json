@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764177544125",
+    "project_id": "flutter-til-adc78",
+    "storage_bucket": "flutter-til-adc78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764177544125:android:fd9aa14a4f7c2f496658d4",
+        "android_client_info": {
+          "package_name": "com.example.flutter_til"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764177544125-838e7nl4pjhfvhvhti5g0rgg4c9shkbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBajg1l0LklXDD0xI8wExLHHRwYxpudttQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764177544125-838e7nl4pjhfvhvhti5g0rgg4c9shkbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

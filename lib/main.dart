@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'firebase/firebase_home_page.dart';
+import 'home_page.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -13,21 +17,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter TIL'),
-      ),
-      body: Container(),
+      home: HomePage(),
+      routes: {
+        FirebaseHomePage.routeName: (ctx) => const FirebaseHomePage(),
+      },
     );
   }
 }
