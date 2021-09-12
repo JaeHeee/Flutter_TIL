@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'firebase/firebase_crashlytics.dart';
 import 'firebase/firebase_home_page.dart';
 import 'home_page.dart';
 
@@ -20,6 +21,8 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         FirebaseHomePage.routeName: (ctx) => const FirebaseHomePage(),
+        FirebaseCrashlyticsScreen.routeName: (ctx) =>
+            const FirebaseCrashlyticsScreen(),
       },
     );
   }

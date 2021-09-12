@@ -1,6 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import '../widget/til_button.dart';
+import 'firebase_crashlytics.dart';
+
 class FirebaseHomePage extends StatefulWidget {
   static const routeName = '/firebase-home';
 
@@ -12,7 +15,11 @@ class FirebaseHomePage extends StatefulWidget {
 
 class _FirebaseHomePageState extends State<FirebaseHomePage> {
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
-  final List<Widget> list = [];
+  final List<Widget> list = [
+    const TilButton(
+        title: '1. Firebase Crashlytics',
+        routeName: FirebaseCrashlyticsScreen.routeName),
+  ];
 
   @override
   Widget build(BuildContext context) {
