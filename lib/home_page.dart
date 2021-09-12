@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widget/girdview_widget.dart';
 
 import 'firebase/firebase_home_page.dart';
 import 'widget/dismissible_widget.dart';
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
         title: '1. Firebase', routeName: FirebaseHomePage.routeName),
     const TilButton(
         title: '2. Dismissible', routeName: DismissibleWidget.routeName),
+    const TilButton(title: '3. GridView', routeName: GridViewWidget.routeName),
   ];
 
   @override
