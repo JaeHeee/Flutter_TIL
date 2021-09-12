@@ -26,7 +26,6 @@ class _FirebaseHomePageState extends State<FirebaseHomePage> {
     return FutureBuilder(
       future: _initialization,
       builder: (context, snapshot) {
-        print(snapshot);
         if (snapshot.hasError) {
           return Scaffold(
             body: Center(
@@ -40,7 +39,7 @@ class _FirebaseHomePageState extends State<FirebaseHomePage> {
         if (snapshot.connectionState == ConnectionState.done) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Flutter TIL'),
+              title: const Text('Firebase'),
             ),
             body: ListView.builder(
               itemCount: list.length,
