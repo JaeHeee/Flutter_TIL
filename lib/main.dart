@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_til/widget/dismissible_widget.dart';
 
 import 'firebase/firebase_crashlytics.dart';
 import 'firebase/firebase_home_page.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         FirebaseHomePage.routeName: (ctx) => const FirebaseHomePage(),
         FirebaseCrashlyticsScreen.routeName: (ctx) =>
             const FirebaseCrashlyticsScreen(),
+        DismissibleWidget.routeName: (ctx) => DismissibleWidget(),
       },
     );
   }

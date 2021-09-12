@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'firebase/firebase_home_page.dart';
+import 'widget/dismissible_widget.dart';
 import 'widget/til_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,6 +10,8 @@ class HomePage extends StatelessWidget {
   final List<Widget> list = [
     const TilButton(
         title: '1. Firebase', routeName: FirebaseHomePage.routeName),
+    const TilButton(
+        title: '2. Dismissible', routeName: DismissibleWidget.routeName),
   ];
 
   @override
