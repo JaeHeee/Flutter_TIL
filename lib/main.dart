@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_til/widget/isolate/isolate_screen.dart';
 
 import 'firebase/firebase_crashlytics.dart';
 import 'firebase/firebase_home_page.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
             const FirebaseCrashlyticsScreen(),
         DismissibleWidget.routeName: (ctx) => DismissibleWidget(),
         GridViewWidget.routeName: (ctx) => GridViewWidget(),
+        IsolateScreen.routeName: (ctx) => const IsolateScreen(),
       },
     );
   }

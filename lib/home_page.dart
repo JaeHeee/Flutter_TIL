@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_til/widget/isolate/isolate_screen.dart';
 import 'widget/girdview_widget.dart';
 
 import 'firebase/firebase_home_page.dart';
@@ -14,6 +15,7 @@ class HomePage extends StatelessWidget {
     const TilButton(
         title: '2. Dismissible', routeName: DismissibleWidget.routeName),
     const TilButton(title: '3. GridView', routeName: GridViewWidget.routeName),
+    const TilButton(title: '4. Isolate', routeName: IsolateScreen.routeName),
   ];
 
   @override
