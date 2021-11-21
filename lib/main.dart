@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_til/packages/equatable.dart';
 
 import 'dart/isolate/isolate_screen.dart';
 import 'firebase/firebase_crashlytics.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         DismissibleWidget.routeName: (ctx) => DismissibleWidget(),
         GridViewWidget.routeName: (ctx) => GridViewWidget(),
         IsolateScreen.routeName: (ctx) => const IsolateScreen(),
+        EquatableScreen.routeName: (ctx) => const EquatableScreen(),
       },
     );
   }
