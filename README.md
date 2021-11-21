@@ -15,8 +15,9 @@
 |:---:|---|:---:|:---:|
 | 1 | Dismissible | [Content](https://velog.io/@kjha2142/Flutter-Dismissible-Widget) | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/widget/dismissible_widget.dart) |
 | 2 | GridView | [Content](https://velog.io/@kjha2142/Flutter-GridView) | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/widget/girdview_widget.dart) |
-| 3 | Isolate | [Content](https://velog.io/@kjha2142/Flutter-Isolate) | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/widget/isolate/isolate_screen.dart) |
+| 3 | Isolate | [Content](https://velog.io/@kjha2142/Flutter-Isolate) | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/dart/isolate/isolate_utils.dart) |
 | 4 | Unit Test using Mockito | [Content](https://velog.io/@kjha2142/Flutter-Unit-Test-using-Mockito) | [Code](https://github.com/JaeHeee/flutter_mvvm_news/blob/main/test/fetch_top_headline_test.dart) |
+| 5 | Equatable | --- | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/packages/equatable.dart) |
 
 <br>
 <br>
