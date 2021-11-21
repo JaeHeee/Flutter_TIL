@@ -7,7 +7,7 @@ import 'firebase_crashlytics.dart';
 class FirebaseHomePage extends StatefulWidget {
   static const routeName = '/firebase-home';
 
-  const FirebaseHomePage({Key key}) : super(key: key);
+  const FirebaseHomePage({Key? key}) : super(key: key);
 
   @override
   _FirebaseHomePageState createState() => _FirebaseHomePageState();

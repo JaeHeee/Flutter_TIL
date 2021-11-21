@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +6,7 @@ import 'package:flutter/material.dart';
 class FirebaseCrashlyticsScreen extends StatelessWidget {
   static const routeName = '/firebase-crashlytics';
 
-  const FirebaseCrashlyticsScreen({Key key}) : super(key: key);
+  const FirebaseCrashlyticsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

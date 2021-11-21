@@ -9,7 +9,7 @@ import 'isolate_utils.dart';
 
 class IsolateScreen extends StatefulWidget {
   static const routeName = '/isolate-screen';
-  const IsolateScreen({Key key}) : super(key: key);
+  const IsolateScreen({Key? key}) : super(key: key);
 
   @override
   _IsolateScreenState createState() => _IsolateScreenState();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DismissibleWidget extends StatefulWidget {
   static const routeName = '/dismissible-widget';
-  DismissibleWidget({Key key}) : super(key: key);
+  DismissibleWidget({Key? key}) : super(key: key);
 
   @override
   _DismissibleWidgetState createState() => _DismissibleWidgetState();
@@ -34,7 +34,10 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
   }
 
   Future<bool> _confirmDismiss(
-      DismissDirection direction, BuildContext context, int index) {
+    DismissDirection direction,
+    BuildContext context,
+    int index,
+  ) {
     if (direction == DismissDirection.endToStart) {
       return showDialog(
           context: context,
@@ -57,7 +60,7 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
                 ),
               ],
             );
-          });
+          }).then((value) => Future.value(value));
     } else if (direction == DismissDirection.startToEnd) {
       return showDialog(
           context: context,
@@ -80,7 +83,8 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
                 ),
               ],
             );
-          });
+          }).then((value) => Future.value(value));
+      ;
     }
     return Future.value(false);
   }

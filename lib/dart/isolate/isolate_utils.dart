@@ -1,9 +1,9 @@
 import 'dart:isolate';
 
 class IsolateUtils {
-  Isolate _isolate;
-  SendPort _sendPort;
-  ReceivePort _receivePort;
+  late Isolate _isolate;
+  late SendPort _sendPort;
+  late ReceivePort _receivePort;
 
   SendPort get sendPort => _sendPort;
 
@@ -22,11 +22,9 @@ class IsolateUtils {
     mainSendPort.send(childReceivePort.sendPort);
 
     await for (final _IsolateData isolateData in childReceivePort) {
-      if (isolateData != null) {
-        final results = await isolateData.handler(isolateData.params);
+      final results = await isolateData.handler(isolateData.params);
 
-        isolateData.responsePort.send(results);
-      }
+      isolateData.responsePort.send(results);
     }
   }
 
@@ -47,7 +45,6 @@ class IsolateUtils {
   void dispose() {
     _receivePort.close();
     _isolate.kill(priority: Isolate.immediate);
-    _isolate = null;
   }
 }
 

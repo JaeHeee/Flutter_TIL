@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_til/widget/isolate/isolate_screen.dart';
 
+import 'dart/isolate/isolate_screen.dart';
 import 'firebase/firebase_crashlytics.dart';
 import 'firebase/firebase_home_page.dart';
 import 'home_page.dart';

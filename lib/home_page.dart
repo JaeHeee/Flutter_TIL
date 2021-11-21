@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_til/widget/isolate/isolate_screen.dart';
-import 'widget/girdview_widget.dart';
 
+import 'dart/isolate/isolate_screen.dart';
 import 'firebase/firebase_home_page.dart';
 import 'widget/dismissible_widget.dart';
+import 'widget/girdview_widget.dart';
 import 'widget/til_button.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({Key key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
 
   final List<Widget> list = [
     const TilButton(

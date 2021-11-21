@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class TilButton extends StatelessWidget {
   const TilButton({
-    @required this.title,
-    @required this.routeName,
-    Key key,
+    required this.title,
+    required this.routeName,
+    Key? key,
   }) : super(key: key);
 
   final String title;
