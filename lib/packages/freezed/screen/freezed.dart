@@ -12,7 +12,7 @@ class FreezedScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Equatable'),
+        title: const Text('Freezed'),
       ),
       body: Center(
         child: Column(
