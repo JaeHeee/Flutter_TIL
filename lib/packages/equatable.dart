@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
 class EquatableScreen extends StatelessWidget {
-  static const routeName = '/equatable-screen';
   const EquatableScreen({Key? key}) : super(key: key);
 
   @override

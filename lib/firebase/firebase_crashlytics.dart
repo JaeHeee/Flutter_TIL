@@ -4,8 +4,6 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 
 class FirebaseCrashlyticsScreen extends StatelessWidget {
-  static const routeName = '/firebase-crashlytics';
-
   const FirebaseCrashlyticsScreen({Key? key}) : super(key: key);
 
   @override

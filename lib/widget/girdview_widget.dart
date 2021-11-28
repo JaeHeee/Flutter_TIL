@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class GridViewWidget extends StatelessWidget {
-  static const routeName = '/gridView-widget';
   final List<String> _items = List.generate(30, (index) => 'Item ${index + 1}');
 
   @override

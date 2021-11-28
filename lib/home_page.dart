@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
-import 'dart/isolate/isolate_screen.dart';
-import 'firebase/firebase_home_page.dart';
-import 'packages/equatable.dart';
-import 'widget/dismissible_widget.dart';
-import 'widget/girdview_widget.dart';
+import 'utils/til_routes.dart';
 import 'widget/til_button.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
 
   final List<Widget> list = [
+    const TilButton(title: '1. Firebase', routeName: TilRouteName.firebaseHome),
     const TilButton(
-        title: '1. Firebase', routeName: FirebaseHomePage.routeName),
+        title: '2. Dismissible', routeName: TilRouteName.dismissibleWidget),
     const TilButton(
-        title: '2. Dismissible', routeName: DismissibleWidget.routeName),
-    const TilButton(title: '3. GridView', routeName: GridViewWidget.routeName),
-    const TilButton(title: '4. Isolate', routeName: IsolateScreen.routeName),
+        title: '3. GridView', routeName: TilRouteName.gridViewWidget),
+    const TilButton(title: '4. Isolate', routeName: TilRouteName.isolateScreen),
     const TilButton(
-        title: '4. Equatable', routeName: EquatableScreen.routeName),
+        title: '4. Equatable', routeName: TilRouteName.equatableScreen),
+    const TilButton(title: '5. Freezed', routeName: TilRouteName.freezedScreen),
   ];
 
   @override

@@ -1,12 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/til_routes.dart';
 import '../widget/til_button.dart';
-import 'firebase_crashlytics.dart';
 
 class FirebaseHomePage extends StatefulWidget {
-  static const routeName = '/firebase-home';
-
   const FirebaseHomePage({Key? key}) : super(key: key);
 
   @override
@@ -18,7 +16,7 @@ class _FirebaseHomePageState extends State<FirebaseHomePage> {
   final List<Widget> list = [
     const TilButton(
         title: '1. Firebase Crashlytics',
-        routeName: FirebaseCrashlyticsScreen.routeName),
+        routeName: TilRouteName.firebaseCrashlytics),
   ];
 
   @override

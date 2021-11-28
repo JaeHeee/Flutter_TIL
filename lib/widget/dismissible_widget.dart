@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class DismissibleWidget extends StatefulWidget {
-  static const routeName = '/dismissible-widget';
   DismissibleWidget({Key? key}) : super(key: key);
 
   @override
@@ -84,7 +83,6 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
               ],
             );
           }).then((value) => Future.value(value));
-      ;
     }
     return Future.value(false);
   }

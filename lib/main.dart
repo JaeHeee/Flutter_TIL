@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_til/packages/equatable.dart';
 
-import 'dart/isolate/isolate_screen.dart';
-import 'firebase/firebase_crashlytics.dart';
-import 'firebase/firebase_home_page.dart';
 import 'home_page.dart';
-import 'widget/dismissible_widget.dart';
-import 'widget/girdview_widget.dart';
+import 'utils/til_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,15 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
-      routes: {
-        FirebaseHomePage.routeName: (ctx) => const FirebaseHomePage(),
-        FirebaseCrashlyticsScreen.routeName: (ctx) =>
-            const FirebaseCrashlyticsScreen(),
-        DismissibleWidget.routeName: (ctx) => DismissibleWidget(),
-        GridViewWidget.routeName: (ctx) => GridViewWidget(),
-        IsolateScreen.routeName: (ctx) => const IsolateScreen(),
-        EquatableScreen.routeName: (ctx) => const EquatableScreen(),
-      },
+      routes: TilRoutes.routes,
     );
   }
 }

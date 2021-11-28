@@ -8,7 +8,6 @@ import 'package:http/http.dart' as http;
 import 'isolate_utils.dart';
 
 class IsolateScreen extends StatefulWidget {
-  static const routeName = '/isolate-screen';
   const IsolateScreen({Key? key}) : super(key: key);
 
   @override
