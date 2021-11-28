@@ -18,6 +18,7 @@
 | 3 | Isolate | [Content](https://velog.io/@kjha2142/Flutter-Isolate) | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/dart/isolate/isolate_utils.dart) |
 | 4 | Unit Test using Mockito | [Content](https://velog.io/@kjha2142/Flutter-Unit-Test-using-Mockito) | [Code](https://github.com/JaeHeee/flutter_mvvm_news/blob/main/test/fetch_top_headline_test.dart) |
 | 5 | Equatable | --- | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/packages/equatable.dart) |
+| 6 | Freezed | --- | [Code](https://github.com/JaeHeee/Flutter_TIL/blob/main/lib/packages/freezed/screen/freezed.dart) |
 
 <br>
 <br>
