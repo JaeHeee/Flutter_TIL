@@ -16,6 +16,8 @@ class HomePage extends StatelessWidget {
     const TilButton(
         title: '4. Equatable', routeName: TilRouteName.equatableScreen),
     const TilButton(title: '5. Freezed', routeName: TilRouteName.freezedScreen),
+    const TilButton(
+        title: '6. FlutterBloc', routeName: TilRouteName.flutterBlocScreen),
   ];
 
   @override
